@@ -12,7 +12,6 @@
     }
 
     #app > img {
-      float: right;
       width: 40%;
       margin-left: 50px;
     }
@@ -40,6 +39,12 @@
       align-items: center;
       justify-content: center; /* added */
       min-height: 100vh; /* added */
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 50px;
+      width: 700px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     }
 
     .content {
@@ -59,6 +64,10 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
     }
+
+    body {
+      justify-items: center;
+    }
   </style>
   <body>
     <div class="container">
@@ -76,6 +85,13 @@
         <img src="https://i.postimg.cc/cKC2Tf7P/S-21561350-0.jpg" alt="3" />
 
         <p>คลิกที่ชื่ออาหาร เพื่อดูรูปภาพ</p>
+
+        <button>หน้าแรก</button>
+        <button>ข้าว</button>
+        <button>ไก่</button>
+        <button>ปลา</button>
+        <button>ไข่</button>
+        <button>บะหมี่</button>
 
         <div id="app">
           <ol>
@@ -102,34 +118,66 @@
               {
                 name: "ข้าวผัดอเมริกัน",
                 url: "https://i.postimg.cc/143nBtbw/0f0e3707-27f1-46c4-a66d-a4e68ecb9658.jpg",
+                animal: "ไข่",
+                cook: "ข้าว",
+                cooked: "ทอด",
+                CT: "อเมริกัน",
               },
               {
                 name: "ข้าวไก่ทอดแกงกระหรี่",
                 url: "https://i.postimg.cc/YhJvtx0z/208263fb-c072-4251-8ee5-98400d024ce4.jpg",
+                animal: "ไก่",
+                cook: "ข้าว",
+                cooked: "ทอด",
+                CT: "ยี่ปุ่น",
               },
               {
                 name: "ข้าวไก่ย่าง Spicy",
                 url: "https://i.postimg.cc/bSrZwC13/395627eb-a31f-493d-a0d8-89b82f0c9435.jpg",
+                animal: "ไก่",
+                type: "ข้าว",
+                cooked: "ย่าง",
+                CT: "ยี่ปุ่น",
               },
               {
                 name: "รามยอนบะหมี่ไก่เผ็ด",
                 url: "https://i.postimg.cc/8FGs6PhF/46b43994-e036-4cb3-bad7-2622c627bf39.jpg",
+                animal: "ไก่",
+                type: "เส้น",
+                cooked: "ต้ม",
+                CT: "ยี่ปุ่น",
               },
               {
                 name: "ข้าวไก่ซอสเทริยากิ",
                 url: "https://i.postimg.cc/HVJJGNYL/6c1b15ea-48d1-4403-9bcb-837dd09c86ad.jpg",
+                animal: "ไก่",
+                type: "ข้าว",
+                cooked: "ต้ม",
+                CT: "ยี่ปุ่น",
               },
               {
                 name: "ข้าวปลาทอดซอสมะขาม",
                 url: "https://i.postimg.cc/Y4x0fK3d/b657db41-dce4-43f9-9d25-4e2d324681bd.jpg",
+                animal: "ปลา",
+                type: "ข้าว",
+                cooked: "ทอด",
+                CT: "ยี่ปุ่น",
               },
               {
                 name: "จาจังมยอนบะหมี่ดำเกาหลี",
                 url: "https://i.postimg.cc/DmpWMhKD/e9341ccd-b502-4203-b9c2-251c3e79aa59.jpg",
+                animal: "ไก่",
+                type: "เส้น",
+                cooked: "ต้ม",
+                CT: "ยี่ปุ่น",
               },
               {
                 name: "ข้าวไข่ข้นเบคอนแฮม",
                 url: "https://i.postimg.cc/WdghzJJL/f13c8937-4de9-48d0-a953-aa98d2557685.jpg",
+                nimal: "ไข่, เบคอน, แฮม ",
+                type: "ข้าว",
+                cooked: "ทอด",
+                CT: "ยี่ปุ่น",
               },
             ],
           };
